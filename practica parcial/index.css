@@ -1,0 +1,27 @@
+th , td
+{
+    border: 1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+#btnGuardar
+{
+    background-color: rgb(17, 197, 80);
+}
+#btnEliminar
+{
+    background-color: rgb(238, 168, 38);
+}
+#btnCancelar
+{
+    background-color: rgba(0, 0, 255, 0.692);
+}
+
+h1
+{
+    text-align: center;
+}

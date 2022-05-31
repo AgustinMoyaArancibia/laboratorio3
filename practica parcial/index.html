@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js" type="module"></script>
+    <title>ABM</title>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+    <section>
+
+        <form>
+    
+            <input type="text"
+            name="txtNombre"
+            placeholder="NOMBRE"
+            autocomplete="off">
+            <br/>
+            <input type="number"
+            name="txtEdad"
+            placeholder="EDAD"
+            autocomplete="off"
+            min="18"
+            max="65">
+            <br/>
+            <input type="email"
+            name="txtEmail"
+            placeholder="EMAIL"
+            autocomplete="off">
+            <br/>
+          
+            <fieldset>
+
+                <legend>GENERO</legend>
+                <input type="radio" name="rdoGenero" value="Masculino" checked >MASCULINO<br/>
+                <input type="radio" name="rdoGenero" value="femenino">FEMENINO <br/>
+
+            </fieldset>
+            
+            <br/>
+            <input type="submit"  value="Guardar" id="btnGuardar"> 
+            <input type="button"  value ="Eliminar" id="btnEliminar"> 
+            <input type="button"  value = "Cancelar" id = "btnCancelar"> 
+            <input type="hidden"  name="txtId" > 
+
+        </form>
+    </section>
+    <br/>
+   
+
+    <div id ="spinner-container"></div>
+    <div id="divTabla"></div>
+</body>
+</html>
