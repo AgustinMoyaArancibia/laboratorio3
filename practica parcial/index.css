@@ -15,6 +15,11 @@ table
 #btnEliminar
 {
     background-color: rgb(238, 168, 38);
+ 
+}
+.oculto{
+    
+    display:none;
 }
 #btnCancelar
 {

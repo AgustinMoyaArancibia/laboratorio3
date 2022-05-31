@@ -44,9 +44,9 @@ export const crearTabla = (data) =>
     //cargo la cabecera , thead
     for (const key in data[0])  //recorro el primer elemento del array
     {
-        for(const key2 in data[0])
+        for (const key2 in data[1])  //recorro el primer elemento del array
         {
-            if(key !== "id" && key2 !== "id" ) //no pongo el id en la cabecera
+          if(key !== "id" && key2 !== "id" ) //no pongo el id en la cabecera
             {
                 const th = document.createElement("th"); //creo cuadro de separacion de la columna thead
                 const contenido = document.createTextNode(key); //guardo el texto de key     
@@ -57,6 +57,8 @@ export const crearTabla = (data) =>
         }
        
     }
+
+  
 
 
    

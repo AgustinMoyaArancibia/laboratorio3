@@ -14,6 +14,7 @@ actualizarTabla( );
 
 
 
+
 const handlerCreate = (nuevaPersona) => //se da de alta
 {
     personas.push(nuevaPersona);
@@ -72,6 +73,8 @@ window.addEventListener("click",(e)=>    //evento de click sobre la pestaña
         let id = e.target.parentElement.dataset.id;
 
         cargarFormulario(personas.find((persona)=>persona.id == id));   //recibe un call back y devuelve la primera ocurrencia que e true
+
+     
     }
     if(e.target.matches("#btnEliminar"))
     {
@@ -132,7 +135,7 @@ $formulario.addEventListener("submit", (e) =>{
         },2000)
         
     }
-
+    document.getElementById("btnEliminar").classList.remove("oculto");
     $formulario.reset(); //reinicio el formulario
 });
 
@@ -161,7 +164,7 @@ const actualizarStorage = (data) =>
 
 function agregarSpinner(){
     let spinner = document.createElement("img");
-    spinner.setAttribute("src",".js/assets/1495.gif");
+    spinner.setAttribute("src","./assets/spinner copy.gif");
     spinner.setAttribute("alt","Imagen spinner");
     document.getElementById("spinner-container").appendChild(spinner);
 }
@@ -171,3 +174,13 @@ function agregarSpinner(){
 function eliminarSpinner(){
     document.getElementById("spinner-container").innerHTML="";
 }
+
+
+function ocultar(){
+    document.getElementById("#btnEliminar").style.display ='none';
+    }
+   
+    function mostrar(){
+    document.getElementById("#btnEliminar").style.display = 'inline';
+    }
+    
